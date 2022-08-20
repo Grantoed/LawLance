@@ -1,0 +1,44 @@
+.hero {
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.hero__img {
+  width: 311px;
+  height: 326px;
+}
+
+.hero__block {
+  position: absolute;
+  top: 76px;
+  right: 38px;
+
+  padding-top: 13px;
+  padding-bottom: 17px;
+  padding-left: 17px;
+  padding-right: 17px;
+
+  width: 321px;
+  height: 268px;
+
+  color: $sec-txt-color;
+  text-align: center;
+
+  background-color: $bg-color;
+  box-shadow: 10px 4px 10px rgba(37, 37, 46, 0.4);
+}
+
+.hero__name {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.8;
+}
+
+.hero__descr {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.8;
+}

@@ -1,0 +1,20 @@
+.submit-button {
+  width: 171px;
+  height: 41px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.8;
+
+  text-align: center;
+
+  background-color: $accent-color;
+  box-shadow: 2px 4px 4px rgba(240, 109, 57, 0.25);
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.header__submit-button {
+  display: none;
+}

@@ -1,0 +1,18 @@
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80vw;
+  height: 100vh;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 118px;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+  z-index: 1;
+  transform: translateX(100%);
+  transition: transform $transition;
+}

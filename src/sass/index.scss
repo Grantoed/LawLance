@@ -1,2 +1,12 @@
-@import './common';
-@import './example';
+@import './base/common';
+@import './utils/visually-hidden';
+@import './utils/vars';
+
+@import './components/container';
+@import './components/mobile-menu';
+@import './components/submit-button';
+@import './components/section-title';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';

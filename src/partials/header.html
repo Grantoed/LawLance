@@ -3,18 +3,18 @@
         <div class="header--top">
             <address class="contacts">
                 <ul class="contacts__list">
-                    <li class="contacts__item"><a class="contacts__email" href="mailto:info.lawlance@gmail.com"><svg
-                                class="email-icon">
+                    <li class="contacts__item"><a class="contacts__link contacts__email"
+                            href="mailto:info.lawlance@gmail.com"><svg class="email-icon">
                                 <use href="images/icons.svg#icon-message"></use>
                             </svg>info.lawlance@gmail.com</a></li>
-                    <li class="contacts__item"><a class="contacts__phone" href="tel:+38(068)6234835"><svg
+                    <li class="contacts__item"><a class="contacts__link contacts__phone" href="tel:+38(068)6234835"><svg
                                 class="phone-icon">
                                 <use href="images/icons.svg#icon-call"></use>
                             </svg>+38 (068) 623 48
                             35</a>
                     </li>
-                    <li class="contacts__item"><a class="contacts__telegram" href="https://t.me/LawLancePlatform"><svg
-                                class="telegram-icon">
+                    <li class="contacts__item"><a class="contacts__link contacts__telegram"
+                            href="https://t.me/LawLancePlatform"><svg class="telegram-icon">
                                 <use href="images/icons.svg#icon-telegram"></use>
                             </svg>@LawLancePlatform</a></li>
                 </ul>
@@ -32,9 +32,7 @@
         </div>
         <div class="header--bottom">
             <a class="logo header__logo" href="./">
-                <svg>
-                    <use href="images/icons.svg#icon-logo"></use>
-                </svg>
+                <img src="/src/images/logo.png" alt="Лого">
             </a>
             <nav class="nav">
                 <ul class="nav__list">
@@ -44,7 +42,24 @@
                     <li class="nav__item">*Вибір мови*</li>
                 </ul>
             </nav>
-            <button type="button">Залишити заявку</button>
+            <button class="submit-button header__submit-button" type="button">Залишити заявку</button>
+            <button class="nav__btn-menu" aria-expanded="false" aria-controls="nav-menu" data-menu-button>
+                <svg width="21" height="23">
+                    <use class="icon-burger" href="./images/icons.svg#icon-fi_menu"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mobile-menu">
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Про нас</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Наші послуги</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Співпраця</a></li>
+                    <li class="mobile-menu__item">*Вибір мови*</li>
+                </ul>
+            </nav>
         </div>
     </div>
+
 </header>

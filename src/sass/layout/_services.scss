@@ -1,0 +1,15 @@
+.services {
+  padding-top: 15px;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column-reverse;
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.services__text-block {
+  margin-bottom: 15px;
+}

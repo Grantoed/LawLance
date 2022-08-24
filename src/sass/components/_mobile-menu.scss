@@ -1,8 +1,8 @@
 .mobile-menu {
   position: absolute;
-  top: 0;
+  top: 52px;
   right: 0;
-  width: 80vw;
+  width: 50vw;
   height: 100vh;
   padding-left: 50px;
   padding-right: 50px;
@@ -15,4 +15,8 @@
   z-index: 1;
   transform: translateX(100%);
   transition: transform $transition;
+
+  &--is-open {
+    transform: translateX(0%);
+  }
 }

@@ -1,0 +1,27 @@
+.socials {
+  display: flex;
+
+  &--header {
+    display: none;
+  }
+
+  &--footer {
+    margin-top: 10px;
+    justify-content: center;
+  }
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.socials__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.socials__icon {
+  width: 30px;
+  height: 30px;
+}

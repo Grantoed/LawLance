@@ -1,0 +1,16 @@
+.section-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+
+  color: $main-text-color;
+  border-top: 2px solid $accent-color;
+
+  &--top {
+    margin-bottom: 10px;
+  }
+  &--bottom {
+    border-top: none;
+  }
+}

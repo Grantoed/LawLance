@@ -1,6 +1,10 @@
 .header {
   padding-top: 10px;
 
+  &__container {
+    position: relative;
+  }
+
   &--top {
     font-weight: 500;
     font-size: 12px;
@@ -43,12 +47,6 @@
   display: flex;
   align-items: center;
   color: $sec-txt-color;
-}
-
-.logo {
-  display: inline-block;
-  width: 130px;
-  height: 41px;
 }
 
 .nav {

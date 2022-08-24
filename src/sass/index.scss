@@ -3,10 +3,17 @@
 @import './utils/vars';
 
 @import './components/container';
+@import './components/logo';
 @import './components/mobile-menu';
 @import './components/submit-button';
 @import './components/section-title';
+@import './components/section-args';
+@import './components/section-text';
+@import './components/socials';
 
 @import './layout/header';
 @import './layout/hero';
 @import './layout/about';
+@import './layout/services';
+@import './layout/form';
+@import './layout/footer';

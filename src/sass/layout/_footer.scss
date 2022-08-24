@@ -1,0 +1,41 @@
+.footer {
+  border-top: 1px solid $footer-border;
+  padding-bottom: 20px;
+
+  &__container {
+    position: relative;
+  }
+}
+
+.rules {
+  text-align: center;
+}
+
+.privacy-policy {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.6;
+
+  letter-spacing: -0.015em;
+
+  color: $footer-txt-color;
+}
+
+.platform-usage {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.6;
+
+  letter-spacing: -0.015em;
+
+  color: $footer-txt-color;
+}
+
+.copyright {
+  text-align: right;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+
+  letter-spacing: -0.015em;
+}

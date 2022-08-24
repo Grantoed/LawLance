@@ -1,14 +1,16 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Lora', serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.8;
-}
 
-body.modal-open {
-  @media screen and (max-width: 767px) {
+  &.menu-open {
     overflow: hidden;
   }
 }

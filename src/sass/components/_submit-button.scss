@@ -1,4 +1,10 @@
 .submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
   width: 171px;
   height: 41px;
 
@@ -6,8 +12,7 @@
   font-size: 14px;
   line-height: 1.8;
 
-  text-align: center;
-
+  color: $main-text-color;
   background-color: $accent-color;
   box-shadow: 2px 4px 4px rgba(240, 109, 57, 0.25);
   border-radius: 14px;
@@ -17,9 +22,6 @@
   transition: background-color $transition, box-shadow $transition;
 
   &--inactive {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     background-color: $inactive-btn-color;
     box-shadow: 2px 4px 4px rgba(158, 158, 158, 0.25);
     &:hover {

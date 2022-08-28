@@ -4,4 +4,10 @@
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
+
+  @include desktop {
+    max-width: 1200px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }

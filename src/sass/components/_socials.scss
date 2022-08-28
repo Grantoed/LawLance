@@ -2,7 +2,9 @@
   display: flex;
 
   &--header {
-    display: none;
+    @include mobile {
+      display: none;
+    }
   }
 
   &--footer {

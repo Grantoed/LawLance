@@ -21,42 +21,81 @@
     font-size: 12px;
     line-height: 1.8;
     background-color: $bg-color;
+
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      max-width: 100%;
+      padding-left: 60px;
+      padding-right: 60px;
+
+      font-size: 16px;
+    }
   }
 
   &--bottom {
+    display: flex;
+    align-items: center;
+
     max-width: 375px;
     margin-left: auto;
     margin-right: auto;
+
     padding-left: 16px;
     padding-right: 16px;
-
     padding-top: 5px;
     padding-bottom: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
-  }
-}
 
-.header__socials {
-  display: none;
+    background-color: #fff;
+
+    @include mobile {
+      justify-content: space-between;
+    }
+
+    @include desktop {
+      max-width: 100%;
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-top: 13px;
+      padding-bottom: 30px;
+
+      font-size: 16px;
+    }
+  }
 }
 
 .contacts__list {
   display: flex;
-  justify-content: space-between;
+
+  @include mobile {
+    justify-content: space-between;
+  }
 
   & svg {
     width: 17px;
     height: 17px;
     margin-right: 7px;
+
+    @include desktop {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
   }
 }
 
 .contacts__item {
-  &:last-child {
-    display: none;
+  @include mobile {
+    &:last-child {
+      display: none;
+    }
+  }
+  @include desktop {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
   }
 }
 
@@ -67,16 +106,40 @@
 }
 
 .nav {
-  display: none;
+  margin-left: 250px;
+  margin-right: 50px;
 
-  &__btn-menu {
-    display: inline-flex;
+  @include mobile {
+    display: none;
+  }
 
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    z-index: 2;
-    cursor: pointer;
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.8;
+    color: $main-text-color;
+  }
+}
+
+.nav__btn-menu {
+  display: inline-flex;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 2;
+  cursor: pointer;
+
+  @include desktop {
+    display: none;
   }
 }

@@ -3,12 +3,15 @@
     position: relative;
     display: flex;
     justify-content: flex-end;
+    margin-right: unset;
   }
 }
 
 .hero__img {
-  width: 311px;
-  height: 326px;
+  @include mobile {
+    width: 311px;
+    height: 326px;
+  }
 }
 
 .hero__block {
@@ -29,16 +32,39 @@
 
   background-color: $bg-color;
   box-shadow: 10px 4px 10px rgba(37, 37, 46, 0.4);
+
+  @include desktop {
+    top: 200px;
+    right: 740px;
+
+    width: 600px;
+    height: 500px;
+
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 92px;
+    padding-right: 92px;
+  }
 }
 
 .hero__name {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.8;
+
+  @include desktop {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
 }
 
 .hero__descr {
   font-weight: 600;
   font-size: 26px;
   line-height: 1.8;
+
+  @include desktop {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
 }

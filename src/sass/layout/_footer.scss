@@ -1,14 +1,37 @@
 .footer {
   border-top: 1px solid $footer-border;
-  padding-bottom: 20px;
+
+  @include mobile {
+    padding-bottom: 20px;
+  }
+
+  @include desktop {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
   &__container {
     position: relative;
+
+    @include desktop {
+      display: flex;
+      align-items: baseline;
+      padding-left: 396px;
+    }
   }
 }
 
 .rules {
   text-align: center;
+  @include desktop {
+    display: flex;
+  }
+}
+
+.rules__item:not(:last-child) {
+  @include desktop {
+    margin-right: 15px;
+  }
 }
 
 .privacy-policy {
@@ -38,4 +61,8 @@
   line-height: 1.6;
 
   letter-spacing: -0.015em;
+
+  @include desktop {
+    margin-left: auto;
+  }
 }

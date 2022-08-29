@@ -1,5 +1,8 @@
 .about {
   padding-top: 44px;
+  @include desktop {
+    padding-top: 80px;
+  }
 }
 
 .about__descr {
@@ -9,11 +12,40 @@
   text-align: center;
 
   color: $main-text-color;
+
+  @include desktop {
+    max-width: 848px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 46px;
+
+    font-size: 28px;
+  }
+}
+
+.about__block {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .about__img {
   width: 343px;
   height: 278px;
+
+  @include desktop {
+    width: 587px;
+    height: 476px;
+    flex-shrink: 0;
+  }
+}
+
+.about__bulletpoints {
+  @include desktop {
+    flex-shrink: 0;
+    width: 440px;
+  }
 }
 
 .about__item {

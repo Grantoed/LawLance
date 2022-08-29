@@ -1,6 +1,21 @@
 .form {
   padding-top: 25px;
   padding-bottom: 18px;
+
+  @include desktop {
+    width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &__container {
+    @include desktop {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
 
 .form__title {
@@ -14,6 +29,12 @@
   letter-spacing: -0.015em;
 
   color: $main-text-color;
+
+  @include desktop {
+    margin-bottom: 17px;
+    font-size: 34px;
+    line-height: 2.12;
+  }
 }
 
 .form__descr {
@@ -26,6 +47,12 @@
   letter-spacing: -0.015em;
 
   color: $main-text-color;
+
+  @include desktop {
+    margin-bottom: 85px;
+    font-size: 30px;
+    line-height: 1.67;
+  }
 }
 
 .form__input {
@@ -43,13 +70,32 @@
 
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+
+  @include desktop {
+    height: 68px;
+    margin-bottom: 40px;
+    padding-left: 24px;
+  }
+
+  &--dropdown {
+    @include desktop {
+      margin-bottom: 36px;
+    }
+  }
 }
 
 .form__policy-field {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+
+  @include mobile {
+    justify-content: center;
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .form__policy-checkbox {
@@ -67,6 +113,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   font-weight: 400;
   font-size: 14px;

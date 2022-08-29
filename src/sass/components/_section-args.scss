@@ -3,4 +3,16 @@
   font-size: 24px;
   line-height: 1.8;
   color: $main-text-color;
+  border-bottom: 2px solid $accent-color;
+
+  @include desktop {
+    font-size: 30px;
+  }
+
+  &--short {
+    @include desktop {
+      display: inline-block;
+      width: 340px;
+    }
+  }
 }

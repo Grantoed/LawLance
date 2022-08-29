@@ -1,12 +1,44 @@
 .services {
   padding-top: 15px;
+  @include desktop {
+    padding-top: 80px;
+  }
 }
 
 .services__item {
   display: flex;
   flex-direction: column-reverse;
+
+  @include desktop {
+    flex-direction: row;
+  }
+
   &:not(:last-child) {
     margin-bottom: 15px;
+
+    @include desktop {
+      margin-bottom: 64px;
+    }
+  }
+}
+
+.services__item:nth-child(even) {
+  @include desktop {
+    flex-direction: row-reverse;
+  }
+}
+
+.services__img {
+  @include desktop {
+    width: 434px;
+    margin-right: 43px;
+  }
+
+  .services__item:nth-child(even) > & {
+    @include desktop {
+      margin-left: 43px;
+      margin-right: unset;
+    }
   }
 }
 

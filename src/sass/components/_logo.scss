@@ -8,4 +8,9 @@
   position: absolute;
   top: 66px;
   left: 16px;
+
+  @include desktop {
+    top: 0px;
+    left: 55px;
+  }
 }

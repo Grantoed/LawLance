@@ -3,7 +3,10 @@
     position: relative;
     display: flex;
     justify-content: flex-end;
-    margin-right: unset;
+
+    @include desktop {
+      margin-right: unset;
+    }
   }
 }
 
@@ -16,16 +19,6 @@
 
 .hero__block {
   position: absolute;
-  top: 76px;
-  right: 38px;
-
-  padding-top: 13px;
-  padding-bottom: 17px;
-  padding-left: 17px;
-  padding-right: 17px;
-
-  width: 321px;
-  height: 268px;
 
   color: $sec-txt-color;
   text-align: center;
@@ -33,9 +26,22 @@
   background-color: $bg-color;
   box-shadow: 10px 4px 10px rgba(37, 37, 46, 0.4);
 
+  @include mobile {
+    top: 76px;
+    right: 38px;
+
+    width: 321px;
+    height: 268px;
+
+    padding-top: 13px;
+    padding-bottom: 17px;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
   @include desktop {
     top: 200px;
-    right: 740px;
+    left: -137px;
 
     width: 600px;
     height: 500px;

@@ -22,6 +22,7 @@
   transition: background-color $transition, box-shadow $transition;
 
   @include desktop {
+    height: 45px;
     font-size: 16px;
   }
 

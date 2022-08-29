@@ -5,10 +5,16 @@
   text-align: justify;
 
   color: $main-text-color;
-  border-top: 2px solid $accent-color;
+
+  @include desktop {
+    font-size: 20px;
+  }
 
   &--top {
     margin-bottom: 10px;
+    @include desktop {
+      margin-bottom: 25px;
+    }
   }
   &--bottom {
     border-top: none;

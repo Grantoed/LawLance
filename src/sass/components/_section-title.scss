@@ -8,4 +8,16 @@
   text-transform: capitalize;
 
   color: $main-text-color;
+
+  @include desktop {
+    margin-bottom: 17px;
+
+    font-size: 34px;
+  }
+}
+
+.services__section-title {
+  @include desktop {
+    margin-bottom: 40px;
+  }
 }

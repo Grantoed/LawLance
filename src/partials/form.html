@@ -4,9 +4,16 @@
         <p class="form__descr">Після надсилання запиту, наш спеціаліст зв'яжеться з Вами</p>
         <form class="application-form" action="submit">
             <input class="form__input" type="text" name="name" id="name" placeholder="Як до вас звертатися?">
-            <input class="form__input" type="email" name="email" id="email"
+            <input class="form__input" type="text" name="email-or-phone" id="email-or-phone"
                 placeholder="Ваша електорнна пошта або номер телефону">
-            <div class="form__input form__input--dropdown">*Тут буде дроп-даун меню*</div>
+            <select class="form__input" name="question" id="question">
+                <option class="form__input-option" value="ваше правове питання до нас">Ваше правове питання до нас
+                </option>
+                <option class="form__input-option" value="складання договору">Складання договору</option>
+                <option class="form__input-option" value="реєстрація бізнесу">Реєстрація бізнесу</option>
+                <option class="form__input-option" value="консультація">Консультація</option>
+                <option class="form__input-option" value="інше">Інше</option>
+            </select>
             <div class="form__policy-field">
                 <input type="checkbox" name="policy" id="policy" class="form__policy-checkbox" />
                 <label for="policy" class="form__policy-label">
@@ -19,7 +26,8 @@
                     <a href="" class="form__policy-link">Політикою конфіденційності</a>
                 </label>
             </div>
-            <button class="submit-button submit-button--inactive" type="submit">Залишити заявку</button>
+            <button class="submit-button submit-button--inactive" disabled type="submit" data-modal-open>Залишити
+                заявку</button>
         </form>
     </div>
 </section>

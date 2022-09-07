@@ -29,10 +29,7 @@
   &--inactive {
     background-color: $inactive-btn-color;
     box-shadow: 2px 4px 4px rgba(158, 158, 158, 0.25);
-    &:hover {
-      background-color: $accent-color;
-      box-shadow: 2px 4px 4px rgba(240, 109, 57, 0.25);
-    }
+    cursor: default;
   }
 }
 

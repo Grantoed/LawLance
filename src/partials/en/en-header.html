@@ -38,39 +38,38 @@
                 <li class="nav__item"><a class="nav__link" href="#about">About us</a></li>
                 <li class="nav__item"><a class="nav__link" href="#services">Our Services</a></li>
                 <li class="nav__item"><a class="nav__link" href="">Cooperation</a></li>
-                <div class="dropdown">
-                    <input type="text" class="textBox" placeholder="English" readonly>
-                    <div class="option">
-                        <a class="nav__link" href="./" onclick="show('English')">English</a>
-                        <a class="nav__link" href="./" onclick="show('Українська')">Українська</a>
-                    </div>
-                </div>
+
             </ul>
+            <div class="dropdown">
+                <input type="text" class="textBox" placeholder="English" readonly>
+                <div class="option">
+                    <a class="nav__link" href="./" onclick="show('English')">English</a>
+                    <a class="nav__link" href="./" onclick="show('Українська')">Українська</a>
+                </div>
+            </div>
         </nav>
         <a class="submit-button header__submit-button" href="#form">Get legal aid</a>
-        <button class="nav__btn-menu" aria-expanded="false" aria-controls="nav-menu" data-menu-button>
+        <button class="nav__btn-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
             <svg width="21" height="23">
                 <use class="icon-burger" href="./images/icons.svg#icon-fi_menu"></use>
             </svg>
         </button>
     </div>
     <div class="container header__container">
-
-
         <div class="mobile-menu" id="mobile-menu" data-menu>
             <nav class="mobile-menu__nav">
                 <ul class="mobile-menu__list">
                     <li class="mobile-menu__item"><a class="mobile-menu__link" href="#about">About us</a></li>
                     <li class="mobile-menu__item"><a class="mobile-menu__link" href="#services">Our Services</a></li>
                     <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Cooperation</a></li>
-                    <div class="dropdown dropdown--mobile">
-                        <input type="text" class="textBox" placeholder="English" readonly>
-                        <div class="option">
-                            <a class="nav__link" href="/src/en.html" onclick="show('English')">English</a>
-                            <a class="nav__link" href="/src/index.html" onclick="show('Українська')">Українська</a>
-                        </div>
-                    </div>
                 </ul>
+                <div class="dropdown dropdown--mobile">
+                    <input type="text" class="textBox" placeholder="English" readonly>
+                    <div class="option">
+                        <a class="nav__link" href="/src/en.html" onclick="show('English')">English</a>
+                        <a class="nav__link" href="/src/index.html" onclick="show('Українська')">Українська</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </div>

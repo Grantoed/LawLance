@@ -106,8 +106,9 @@
 }
 
 .nav {
+  display: flex;
+  align-items: center;
   margin-left: 250px;
-  margin-right: 50px;
 
   @include mobile {
     display: none;
@@ -116,6 +117,7 @@
   &__list {
     display: flex;
     align-items: center;
+    margin-right: 50px;
   }
 
   &__item:not(:last-child) {

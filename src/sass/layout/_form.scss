@@ -71,14 +71,14 @@
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 
-  &::placeholder {
-    color: rgba(37, 37, 46, 0.8);
-  }
-
   @include desktop {
     height: 68px;
     margin-bottom: 40px;
     padding-left: 24px;
+  }
+
+  &::placeholder {
+    color: rgba(37, 37, 46, 0.8);
   }
 
   &--dropdown {

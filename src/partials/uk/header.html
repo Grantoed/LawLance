@@ -38,7 +38,13 @@
                 <li class="nav__item"><a class="nav__link" href="#about">Про нас</a></li>
                 <li class="nav__item"><a class="nav__link" href="#services">Наші послуги</a></li>
                 <li class="nav__item"><a class="nav__link" href="">Співпраця</a></li>
-                <li class="nav__item">*Вибір мови*</li>
+                <div class="dropdown">
+                    <input type="text" class="textBox" placeholder="Українська" readonly>
+                    <div class="option">
+                        <a class="nav__link" href="./" onclick="show('Українська')">Українська</a>
+                        <a class="nav__link" href="./" onclick="show('English')">English</a>
+                    </div>
+                </div>
             </ul>
         </nav>
         <a class="submit-button header__submit-button" href="#form">Залишити заявку</a>

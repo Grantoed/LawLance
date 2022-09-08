@@ -1,6 +1,6 @@
 export default (() => {
   const refs = {
-    form: document.querySelector('.form'),
+    form: document.querySelector('.application-form'),
     policyBox: document.getElementById('policy'),
     submitBtn: document.querySelector('[type="submit"]'),
   };
@@ -10,6 +10,7 @@ export default (() => {
 
   function onSubmit(evt) {
     evt.preventDefault();
+    evt.currentTarget.reset();
   }
 
   function onPolicyTick() {
@@ -21,6 +22,4 @@ export default (() => {
       refs.submitBtn.classList.add('submit-button--inactive');
     }
   }
-
-  // function displayModal() {}
 })();

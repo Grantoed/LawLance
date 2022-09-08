@@ -24,8 +24,14 @@
   }
 }
 
+.mobile-menu__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .mobile-menu__item {
-  &:not(:last-child) {
+  &:not(:last-of-type) {
     margin-bottom: 15px;
   }
 }
@@ -38,4 +44,19 @@
   text-transform: capitalize;
 
   color: $main-text-color;
+}
+
+.mobile-menu .dropdown .option {
+  top: 50px;
+
+  border: 1px solid $main-text-color;
+  border-radius: 10px;
+}
+
+.mobile-menu .dropdown .option a {
+  padding: 8px 15px;
+
+  &:first-child {
+    border-bottom: 1px solid $main-text-color;
+  }
 }

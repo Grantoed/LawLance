@@ -9,14 +9,20 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+}
 
-  &__container {
-    position: relative;
+.footer__container {
+  position: relative;
 
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+    padding-left: 396px;
+  }
+
+  &--en {
     @include desktop {
-      display: flex;
-      align-items: baseline;
-      padding-left: 396px;
+      padding-left: 440px;
     }
   }
 }
@@ -28,9 +34,17 @@
   }
 }
 
-.rules__item:not(:last-child) {
-  @include desktop {
-    margin-right: 15px;
+.rules__item {
+  &:not(:last-child) {
+    @include desktop {
+      margin-right: 15px;
+    }
+  }
+
+  &--en:not(:last-child) {
+    @include desktop {
+      margin-right: 128px;
+    }
   }
 }
 

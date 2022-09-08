@@ -10,7 +10,7 @@ export default (() => {
 
   function onSubmit(evt) {
     evt.preventDefault();
-    evt.currentTarget.reset();
+    resetForm(evt);
   }
 
   function onPolicyTick() {
@@ -21,5 +21,11 @@ export default (() => {
       refs.submitBtn.setAttribute('disabled', 'disabled');
       refs.submitBtn.classList.add('submit-button--inactive');
     }
+  }
+
+  function resetForm(evt) {
+    evt.currentTarget.reset();
+    refs.submitBtn.setAttribute('disabled', 'disabled');
+    refs.submitBtn.classList.add('submit-button--inactive');
   }
 })();

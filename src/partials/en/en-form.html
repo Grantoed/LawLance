@@ -1,0 +1,34 @@
+<section class="form" id="form">
+    <div class="container form__container">
+        <h2 class="form__title">Application for legal services</h2>
+        <p class="form__descr">After sending the application, our specialist will contact you</p>
+        <form class="application-form" action="submit">
+            <input class="form__input" type="text" name="name" id="name" placeholder="Your name">
+            <input class="form__input" type="text" name="email-or-phone" id="email-or-phone"
+                placeholder="Your email or phone number">
+            <select class="form__input" name="question" id="question">
+                <option class="form__input-option" value="What kind of services do you need">What kind of services do
+                    you need
+                </option>
+                <option class="form__input-option" value="drawing up a contract">Drawing up a contract</option>
+                <option class="form__input-option" value="business registration">Business registration</option>
+                <option class="form__input-option" value="legal advice">Legal advice</option>
+                <option class="form__input-option" value="others">Others</option>
+            </select>
+            <div class="form__policy-field">
+                <input type="checkbox" name="policy" id="policy" class="form__policy-checkbox" />
+                <label for="policy" class="form__policy-label">
+                    <span class="form__icon-checkbox">
+                        <svg class="form__checkmark">
+                            <use href="./images/icons.svg#icon-check"></use>
+                        </svg>
+                    </span>
+                    I agree to
+                    <a href="" class="form__policy-link">Privacy Policy</a>
+                </label>
+            </div>
+            <button class="submit-button submit-button--inactive" disabled type="submit" data-modal-open>Get legal
+                aid</button>
+        </form>
+    </div>
+</section>

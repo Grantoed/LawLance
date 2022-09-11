@@ -1,0 +1,82 @@
+.terms__container {
+  padding-top: 30px;
+  padding-bottom: 90px;
+
+  @include mobile {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.terms__title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 11px;
+  max-width: 465px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.8;
+  text-align: center;
+
+  border-bottom: 2px solid $accent-color;
+
+  @include mobile {
+    max-width: 275px;
+    padding-bottom: 20px;
+
+    font-size: 26px;
+    line-height: 1.3;
+  }
+}
+
+.terms__date {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.8;
+  text-align: right;
+
+  @include mobile {
+    font-size: 20px;
+  }
+}
+
+.terms__list {
+  padding-top: 30px;
+
+  @include mobile {
+    padding-top: 10px;
+  }
+}
+
+.terms__item {
+  margin-bottom: 0.5em;
+}
+
+.terms__para {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.8;
+  text-align: justify;
+
+  @include mobile {
+    font-size: 16px;
+  }
+
+  &--bold {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.8;
+    text-align: justify;
+
+    @include mobile {
+      font-weight: 700;
+      font-size: 16px;
+    }
+  }
+
+  &--link {
+    color: $accent-color;
+    text-decoration: underline;
+  }
+}

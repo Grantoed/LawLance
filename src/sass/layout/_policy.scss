@@ -1,4 +1,4 @@
-.terms__container {
+.policy__container {
   padding-top: 30px;
   padding-bottom: 90px;
 
@@ -8,11 +8,11 @@
   }
 }
 
-.terms__title {
+.policy__title {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 11px;
-  max-width: 465px;
+  margin-bottom: 15px;
+  max-width: 395px;
 
   font-weight: 700;
   font-size: 28px;
@@ -30,15 +30,15 @@
   }
 
   &--en {
-    max-width: 175px;
+    max-width: 190px;
 
     @include mobile {
-      max-width: 162px;
+      max-width: 180px;
     }
   }
 }
 
-.terms__date {
+.policy__date {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.8;
@@ -49,19 +49,38 @@
   }
 }
 
-.terms__list {
-  padding-top: 30px;
+.policy__list {
+  &:first-of-type {
+    padding-top: 30px;
+  }
 
-  @include mobile {
-    padding-top: 10px;
+  &--dotted {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    list-style: unset;
+
+    @include mobile {
+      list-style: none;
+    }
+
+    & > li {
+      margin-left: 1.5em;
+      padding-left: 1.5em;
+
+      @include mobile {
+        margin-left: unset;
+        padding-left: unset;
+      }
+    }
   }
 }
 
-.terms__item:not(:last-child) {
-  margin-bottom: 0.5em;
+.policy__item:not(:last-child) {
+  margin-bottom: 1em;
 }
 
-.terms__para {
+.policy__para {
   font-weight: 400;
   font-size: 25px;
   line-height: 1.8;
@@ -82,9 +101,25 @@
       font-size: 16px;
     }
   }
+}
 
-  &--link {
-    color: $accent-color;
-    text-decoration: underline;
+.policy__subtitle {
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.8;
+  text-align: center;
+
+  @include mobile {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 24px;
   }
+}
+
+.policy__email {
+  font-weight: 600;
+  text-decoration-line: underline;
 }

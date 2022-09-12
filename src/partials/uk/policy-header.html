@@ -1,0 +1,79 @@
+<header class="header">
+    <div class="header--top">
+        <address class="contacts">
+            <ul class="contacts__list">
+                <li class="contacts__item"><a class="contacts__link contacts__email"
+                        href="mailto:info.lawlance@gmail.com"><svg class="email-icon">
+                            <use href="images/icons.svg#icon-message"></use>
+                        </svg>info.lawlance@gmail.com</a></li>
+                <li class="contacts__item"><a class="contacts__link contacts__phone" href="tel:+38(068)6234835"><svg
+                            class="phone-icon">
+                            <use href="images/icons.svg#icon-call"></use>
+                        </svg>+38 (068) 623 48
+                        35</a>
+                </li>
+                <li class="contacts__item"><a class="contacts__link contacts__telegram"
+                        href="https://t.me/LawLancePlatform" target="_blank"><svg class="telegram-icon">
+                            <use href="images/icons.svg#icon-telegram"></use>
+                        </svg>@LawLancePlatform</a></li>
+            </ul>
+        </address>
+        <ul class="socials socials--header">
+            <li class="socials__item"><a class="socials__link" aria-label="Instagram"
+                    href="https://www.instagram.com/law__lance" target="_blank"><svg class="socials__icon">
+                        <use href="images/icons.svg#icon-instagram"></use>
+                    </svg></a></li>
+            <li class="socials__item"><a class="socials__link" aria-label="Facebook"
+                    href="https://www.facebook.com/LawLancePlatform" target="_blank"><svg class="socials__icon">
+                        <use href="images/icons.svg#icon-facebook"></use>
+                    </svg></a></li>
+        </ul>
+    </div>
+    <div class="header--bottom">
+        <a class="logo header__logo" href="./index.html">
+            <img src="/src/images/icon-logo.svg" alt="Лого">
+        </a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="./index.html#about">Про нас</a></li>
+                <li class="nav__item"><a class="nav__link" href="./index.html#services">Наші послуги</a></li>
+                <li class="nav__item"><a class="nav__link" href="">Співпраця</a></li>
+            </ul>
+            <div class="dropdown">
+                <input type="text" class="textBox" placeholder="Українська" readonly>
+                <div class="option">
+                    <a class="nav__link" href="/src/privacy-policy.html" onclick="show('Українська')">Українська</a>
+                    <a class="nav__link" href="/src/en-privacy-policy.html" onclick="show('English')">English</a>
+                </div>
+            </div>
+        </nav>
+        <a class="submit-button header__submit-button" href="./index.html#form">Залишити заявку</a>
+        <button class="nav__btn-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+            <svg width="21" height="23">
+                <use class="icon-burger" href="./images/icons.svg#icon-fi_menu"></use>
+            </svg>
+        </button>
+    </div>
+    <div class="container header__container">
+        <div class="mobile-menu" id="mobile-menu" data-menu>
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="./index.html#about">Про нас</a>
+                    </li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="./index.html#services">Наші
+                            послуги</a></li>
+                    <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Співпраця</a></li>
+                </ul>
+                <div class="dropdown dropdown--mobile">
+                    <input type="text" class="textBox" placeholder="Українська" readonly>
+                    <div class="option">
+                        <a class="nav__link" href="/src/privacy-policy.html" onclick="show('Українська')">Українська</a>
+                        <a class="nav__link" href="/src/en-privacy-policy.html" onclick="show('English')">English</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+</header>
